@@ -1,0 +1,57 @@
+.nav {
+    color: #fff;
+    background-color: rgba(83, 121, 164, 0.29);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logoAndTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.TitleAndSearchBar {
+    margin-left: 10%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.aboutNavButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 20%;
+}
+
+.Createg1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 15px rgb(31, 110, 119), 0 0 5px rgb(31, 110, 119), 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(31, 110, 119);
+    animation: parp 2s infinite backwards;
+    text-decoration: none;
+}
+
+
+.Createg2{
+    padding: 20px;
+    font-size: 40px;
+}

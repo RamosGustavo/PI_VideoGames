@@ -1,0 +1,19 @@
+.paginadoContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.paginadoItem{
+    border: 2px solid white;
+    padding: 5px;
+    background-color: #22223B;
+    border-radius: 5px;
+    color: white;
+}
+
+li:hover{
+    cursor: pointer;
+}

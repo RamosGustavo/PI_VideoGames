@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.containerVideogameCards{
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    row-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    padding-bottom: 50px;
+}
+
+.background{
+    object-fit: cover ;
+    background-image: url('https://wallpaperaccess.com/full/625497.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.ordenamientosYFiltros{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+    padding-top: 40px;
+}
+
+.selectSortingOrFilter{
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #22223B;
+    border: 2px solid white;
+    color: white;
+}
+
+.selectSortingOrFilter:hover{
+    cursor: pointer;
+}
+
+.reloadButton{
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    background-color: #22223B;
+    border: 2px solid white;
+    color: white;
+}
+
+.reloadButton:hover{
+    cursor: pointer;
+}
+.ordenamientos{
+    display: flex;
+    gap: 25px;
+}
+
+.filtros{
+    display: flex;
+    gap: 25px;
+}
+
+.errorMessage{
+    color: white;
+    padding: 10px;
+}
+
+.errorContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: #22223B;
+    width: 100%;
+    margin-left: 205%;
+}
+
+.Createg1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 15px rgb(31, 110, 119), 0 0 5px rgb(31, 110, 119), 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(31, 110, 119);
+    animation: parp 2s infinite backwards;
+    text-decoration: none;
+}
+
+
+.Createg2{
+    padding-bottom: 40px;
+    font-size: 40px;
+}
