@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingPage from "./components/Landingpage/LandingPage";
 import Home from "./components/Home/Home";
 import Create from "./components/CreateVideogame/CreateVideogame.jsx"
-// import Detail from "./components/videoGame detail/Detail";
+import Detail from "./components/Detail/Detail";
 // import Favourites from "./components/Favourites/Favourites";
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
           <Route exact path="/" component={LandingPage} />
           <Route path="/home" component={Home} />
           <Route exact path="/videogames" component={Create} />
-          {/* <Route exact path="/videogames/:id" component={Detail} />
-          <Route exact path="/favourites" component={Favourites} /> */}
+          <Route exact path="/videogame/:id" component={Detail} />
+          {/* <Route exact path="/favourites" component={Favourites} /> */}
         </Switch>
       </div>
     </BrowserRouter>

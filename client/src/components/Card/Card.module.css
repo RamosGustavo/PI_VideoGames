@@ -1,19 +1,20 @@
 .cardDiv{
     display: flex;
     flex-direction: column;
-    border: 2px solid white;
-    width: 170px;
-    height: 200px;
+    align-items: center;
+    border: 2px solid rgb(58, 159, 185);
+    width: 370px;
+    height: 300px;
     padding: 20px;
-    background-color: #22223B;
+    background-color: #000000;
     border-radius: 10px;
+    margin-bottom: 25px;
 }
 
 .cardH3{
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bolder;
-
 }
 
 h4{
@@ -22,7 +23,7 @@ h4{
     text-align: center;
     font-size: 12px;
     font-weight: bolder;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 h3{
@@ -38,10 +39,11 @@ img{
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 10px;
-    border: 2px solid white;
+    margin: 8px;
+    border: 2px solid rgb(58, 159, 185);
     border-radius: 10px;
-    height: 140px;
+    width: 300px;
+    height: 600px;
 }
 
 h5{
@@ -51,4 +53,10 @@ h5{
     font-size: 13px;
     font-weight: bolder;
     color:white
+}
+
+@media (min-width: 1px) and (max-width: 500.98px) {
+    .cardDiv {
+        width: 200px;
+    }
 }

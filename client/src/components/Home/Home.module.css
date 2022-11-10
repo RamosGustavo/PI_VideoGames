@@ -4,15 +4,10 @@
 }
 
 .containerVideogameCards{
-    display: grid;
-    justify-items: center;
-    gap: 10px;
-    row-gap: 20px;
-    grid-template-columns: repeat(5, 1fr);
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 2%;
     padding-bottom: 50px;
 }
 
@@ -28,8 +23,9 @@
     text-align: center;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 25px;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 .selectSortingOrFilter{
@@ -39,9 +35,9 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #22223B;
-    border: 2px solid white;
-    color: white;
+    background-color: #000000;
+    border: 2px solid rgb(58, 159, 185);
+    color: rgb(255, 255, 255);
 }
 
 .selectSortingOrFilter:hover{
@@ -52,8 +48,8 @@
     border-radius: 10px;
     height: 30px;
     width: 200px;
-    background-color: #22223B;
-    border: 2px solid white;
+    background-color: #000000;
+    border: 2px solid rgb(58, 159, 185);
     color: white;
 }
 
@@ -79,9 +75,9 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    border: 3px solid white;
+    border: 3px solid rgb(246, 246, 246);
     border-radius: 10px;
-    background-color: #22223B;
+    background-color: #000000;
     width: 100%;
     margin-left: 205%;
 }
@@ -103,3 +99,11 @@
     padding-bottom: 40px;
     font-size: 40px;
 }
+
+@media (min-width: 1px) and (max-width: 500.98px) {
+    .ordenamientosYFiltros, .filtros, .ordenamientos{
+        display: flex;
+        flex-direction: column;
+    }
+}
+

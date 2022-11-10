@@ -12,7 +12,7 @@ export default function NavBar() {
                         <Link to="/home"></Link>
                         <div className={s.Createg2}>
                             <Link to={"/videogames"} className={s.Createg1}>
-                                Create Your Game!
+                                Create Your Game
                             </Link>
                         </div>
                     </div>

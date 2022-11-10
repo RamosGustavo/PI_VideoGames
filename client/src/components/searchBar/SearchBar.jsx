@@ -1,37 +1,37 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import s from './SearchBar.module.css'
+import s from "./SearchBar.module.css";
 import { getNameVideogames } from "../../Actions/index.js";
 
-export default function Searchbar(){
-
+export default function Searchbar() {
     const dispatch = useDispatch();
-    const [name, setName] = useState('');
+    const [name, setName] = useState("");
 
     const handleInputChange = (e) => {
         e.preventDefault();
         setName(e.target.value);
-    }
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(getNameVideogames(name));
-        setName('');
-    }
+        setName("");
+    };
 
-    return(
+    return (
         <div className={s.container}>
-            <form 
-                className={s.searchbarForm}>
-                <input 
-                    type='text' 
+            <form className={s.searchbarForm}>
+                <input
+                    type="text"
                     onChange={(e) => handleInputChange(e)}
                     value={name}
-                    placeholder='Search...'
-                    className={s.inputSearchbar}
+                    placeholder="Search..."
+                    className={s.input1}
                 />
-                <button className={s.searchbarButton} onClick={(e) => handleSubmit(e)}>GO!</button>
+                <button className={s.btn} onClick={(e) => handleSubmit(e)}>
+                    GO!
+                </button>
             </form>
         </div>
-    )
+    );
 }

@@ -9,6 +9,7 @@ import Card from "../Card/Card.jsx";
 import Loading from "../Loading/Loading.jsx";
 import NavBar from "../NavBar/NavBar.jsx";
 
+
 export default function Home(){
 
     const dispatch = useDispatch();
