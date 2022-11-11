@@ -72,7 +72,7 @@ export default function Home(){
         <div className={s.background}>
             <div>
             <NavBar />
-            </div>
+            </div >
             <div className={s.ordenamientosYFiltros}>
                 {/* Ordenamientos */}
                 <div className={s.ordenamientos}>

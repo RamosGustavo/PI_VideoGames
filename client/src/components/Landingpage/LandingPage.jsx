@@ -8,7 +8,7 @@ export default function LandingPage() {
             <h1 className={s.title}>Your Video Games Page</h1>
             <div className={s.butoton1}>
             <Link to="/home">
-                <button className={s.button}>START</button>
+                <button className={s.buttonLanding}>START</button>
             </Link>
             </div>
             <h5 className={s.h5}>Created by: Ramos Gustavo!</h5>

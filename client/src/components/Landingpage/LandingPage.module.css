@@ -32,22 +32,54 @@
     margin-left: 50%;
 }
 
-.button {
-    margin-top: 290px;
-    border: none;
-    padding: 20px;
-    font-size: 28px;
-    border-radius: 27px;
-    background: #1d625c;
-    text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 5px rgb(31, 110, 119), 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    transition: all 0.5s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.buttonLanding {
+    --glow-color: rgb(2, 129, 143);
+    --glow-spread-color: rgba(65, 177, 164, 0.979);
+    --enhanced-glow-color: rgb(37, 207, 230);
+    --btn-color: rgb(15, 227, 255);
+    border: .25em solid var(--glow-color);
+    margin-top: 320px;
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 3.0s;
 }
 
-.button:hover {
-    background-color: #000000;
-    cursor: pointer;
+.buttonLanding::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.buttonLanding:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.buttonLanding:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
 }
 
 .h5 {

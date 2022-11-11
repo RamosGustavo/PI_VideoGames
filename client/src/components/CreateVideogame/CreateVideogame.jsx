@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {useDispatch, useSelector} from 'react-redux';
-import {useHistory} from 'react-router-dom';
+import { Link, useHistory } from "react-router-dom";
 import {getGenres, postVideogame, getVideogames} from '../../Actions/index.js';
 import s from './CreateVideogame.module.css'
 
@@ -186,7 +186,10 @@ export default function CreateVideogame(){
                         </div>
                     </div>
                 </div>
-                <div >
+                <div>
+                <Link to="/home">
+                                <button className={s.buttonCancel}>CANCEL</button>
+                            </Link>
                     <button className={s.createButton} type='submit'>
                         CREATE
                     </button>                    
