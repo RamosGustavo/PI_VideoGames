@@ -24,7 +24,17 @@ export default function Detail(props) {
         <div className={s.container1}>
             {videogame.image ? (
                 <div >
-                    <h1 className={s.title1}>{videogame.name}</h1>
+                    <div className={s.detailsTitle}>
+                        <Link to="/home">
+                            <div className={s.buttonPadding}>
+                            <button className={s.bottonHome}><span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>HOME</button>
+                                </div>
+                        </Link>
+                        <h1 className={s.title1}>{videogame.name}</h1>
+                    </div>
                     <img
                         className={s.imgDetail1}
                         src={videogame.image}
@@ -41,13 +51,13 @@ export default function Detail(props) {
                     <h5 className={s.texts1}>RELEASE DATE: {videogame.releaseDate}</h5>
                     <h5 className={s.texts1}>PLATFORMS: {videogame.platforms}</h5>{" "}
                     <Link to="/home">
-                <button className={s.backButton1}>GO BACK</button>
-            </Link>
+                        <button className={s.backButton1}>GO BACK</button>
+                    </Link>
                 </div>
             ) : (
                 <div className={s.Loading}>
                     <p>Loading...</p>
-                    </div>
+                </div>
             )}
         </div>
     );

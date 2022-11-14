@@ -3,22 +3,25 @@
     padding: 0;
 }
 
-.containerVideogameCards{
+.containerVideogameCards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 2%;
     padding-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.background{
-    object-fit: cover ;
+.background {
+    width: 100%;
+    min-height: 100vh;
     background-image: url('https://wallpaperaccess.com/full/625497.jpg');
     background-size: cover;
-    min-height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-.ordenamientosYFiltros{
+.ordenamientosYFiltros {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -28,7 +31,7 @@
     padding-top: 50px;
 }
 
-.selectSortingOrFilter{
+.selectSortingOrFilter {
     border-radius: 10px;
     height: 30px;
     width: 200px;
@@ -40,11 +43,11 @@
     color: rgb(255, 255, 255);
 }
 
-.selectSortingOrFilter:hover{
+.selectSortingOrFilter:hover {
     cursor: pointer;
 }
 
-.reloadButton{
+.reloadButton {
     border-radius: 10px;
     height: 30px;
     width: 200px;
@@ -53,25 +56,26 @@
     color: white;
 }
 
-.reloadButton:hover{
+.reloadButton:hover {
     cursor: pointer;
 }
-.ordenamientos{
+
+.ordenamientos {
     display: flex;
     gap: 25px;
 }
 
-.filtros{
+.filtros {
     display: flex;
     gap: 25px;
 }
 
-.errorMessage{
+.errorMessage {
     color: white;
     padding: 10px;
 }
 
-.errorContainer{
+.errorContainer {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -82,28 +86,30 @@
     margin-left: 205%;
 }
 
-.Createg1{
+.Createg1 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 30px;
     color: rgb(0, 0, 0);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 0 0 15px rgb(31, 110, 119), 0 0 5px rgb(31, 110, 119), 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(31, 110, 119);
     animation: parp 2s infinite backwards;
     text-decoration: none;
 }
 
 
-.Createg2{
+.Createg2 {
     padding-bottom: 40px;
     font-size: 40px;
 }
 
 @media (min-width: 1px) and (max-width: 500.98px) {
-    .ordenamientosYFiltros, .filtros, .ordenamientos{
+
+    .ordenamientosYFiltros,
+    .filtros,
+    .ordenamientos {
         display: flex;
         flex-direction: column;
     }
 }
-
