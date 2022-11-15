@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getDetail, resetDetail } from "../../Actions/index.js";
 import s from "./Detail.module.css";
+import Loading from "../Loading/Loading.jsx";
 
 export default function Detail(props) {
     const dispatch = useDispatch();
@@ -55,9 +56,9 @@ export default function Detail(props) {
                     </Link>
                 </div>
             ) : (
-                <div className={s.Loading}>
-                    <p>Loading...</p>
-                </div>
+                <div>
+                <Loading />
+            </div>
             )}
         </div>
     );

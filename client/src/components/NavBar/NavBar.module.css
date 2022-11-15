@@ -44,7 +44,7 @@
     height: 30px;
     color: rgb(0, 0, 0);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 0 0 15px rgb(31, 110, 119), 0 0 5px rgb(31, 110, 119), 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(31, 110, 119);
+    text-shadow: 0 0 15px rgb(249, 254, 255), 0 0 5px rgb(232, 226, 226), 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(214, 218, 219);
     animation: parp 2s infinite backwards;
     text-decoration: none;
 }
@@ -54,7 +54,7 @@
     padding: 13px;
     font-size: 22px;
     border-radius: 25px;
-    border: 2px solid rgb(118, 188, 228);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 @media (min-width: 1px) and (max-width: 500.98px) {

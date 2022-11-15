@@ -1,27 +1,27 @@
-.formContainer{
+.formContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    object-fit: cover ;
+    object-fit: cover;
     background-image: url('https://wallpaperaccess.com/full/625497.jpg');
     background-size: cover;
 }
 
-.platformLabelsContainer{
+.platformLabelsContainer {
     display: flex;
     width: 40%;
     margin: 10px;
     height: 26px;
 }
 
-.select{
+.select {
     width: 100%;
     border-radius: 10px;
 }
 
-.createButton{
+.createButton {
     line-height: 2.5;
     width: 100px;
     height: 35px;
@@ -29,17 +29,17 @@
     border-radius: 20px;
 }
 
-.labels{
+.labels {
     margin: 8px;
     color: white;
     line-height: 2.5;
 }
 
-.error{
+.error {
     color: red;
 }
 
-.platformsAndGenresSelected{
+.platformsAndGenresSelected {
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -47,27 +47,27 @@
     color: white;
 }
 
-.deleteGenreOrPlatform{
+.deleteGenreOrPlatform {
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.deleteGenreOrPlatform:hover{
+.deleteGenreOrPlatform:hover {
     color: red;
 }
 
-.deleteGenreOrPlatform:hover{
+.deleteGenreOrPlatform:hover {
     cursor: pointer;
 }
 
-.formInput{
+.formInput {
     border-radius: 10px;
     width: 765px;
     height: 26px;
 }
 
-.deleteText{
+.deleteText {
     color: white;
 }
 
@@ -94,4 +94,9 @@ input {
 
 input::placeholder {
     color: rgb(5, 5, 5);
+}
+
+
+.errorsRed {
+    color: red
 }
