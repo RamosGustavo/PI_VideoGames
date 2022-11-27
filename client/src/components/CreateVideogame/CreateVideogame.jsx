@@ -66,6 +66,10 @@ export default function CreateVideogame(){
         })
     }
 
+    const validation = {
+        description : input.description
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -106,7 +110,6 @@ export default function CreateVideogame(){
     allVideogames.map(game => game.platforms?.map(platform => platformsArray.push(platform)));
     let platformsSet = [...new Set(platformsArray)];
 
-
     return(
         <div >
             <form className={s.formContainer} onSubmit={(e) => handleSubmit(e)}>
@@ -114,11 +117,13 @@ export default function CreateVideogame(){
                 <label className={s.labels}>NAME: </label>
                 <div>
                     <input className={s.formInput} type='text' name='name' onChange={(e) => handleChange(e)}></input>
+                    {(input.name.length < 4) ? <p>Ingrese al menos tres letras</p> : <span></span>}
                 </div>
                 {/* Description */}
                 <label className={s.labels}>DESCRIPTION: </label>
                 <div>
                     <input className={s.formInput} type='text' name='description' onChange={(e) => handleChange(e)}></input>
+                    {(!validation.description) ? <p>required</p> : <span></span>}
                 </div>
                 {/* Image */}
                 <label className={s.labels}>IMAGE: </label>
@@ -129,11 +134,13 @@ export default function CreateVideogame(){
                 <label className={s.labels}>RELEASE DATE: </label>
                 <div>
                     <input className={s.formInput} type='date' name='releaseDate' onChange={(e) => handleChange(e)}></input>
+                    {(!input.releaseDate) ? <p>required</p> : <span></span>}
                 </div>
                 {/* Rating */}
                 <label className={s.labels}>RATING: </label>
                 <div>
                     <input className={s.formInput} type='number' name='rating' onChange={(e) => handleChange(e)} placeholder='1 - 5'></input>
+                    {(!input.rating || input.rating < 1 || input.rating > 5) ? <p>required</p> : <span></span>}
                 </div>
                 {/* Platforms */} 
                 <label className={s.labels}>PLATFORMS: </label>
@@ -146,6 +153,7 @@ export default function CreateVideogame(){
                         }
                     </select>
                 </div>
+                {(!input.platforms.length) ? <p>required</p> : <span></span>}
                 {/* Genres */}
                 <label className={s.labels}>GENRES: </label>
                 <div className={s.platformLabelsContainer}>
@@ -157,6 +165,7 @@ export default function CreateVideogame(){
                         }
                     </select>
                 </div>
+                {(!input.genres.length) ? <p>required</p> : <span></span>}
                 <p className={s.deleteText}>IF YOU WANT TO DELETE A GENRE OR PLATFORM, CLICK ON THE ONE YOU WANT TO DELETE</p>
                 <div className={s.platformsAndGenresSelected}>
                     <div className={s.genresContainer}>    

@@ -1,4 +1,5 @@
 import axios from "axios";
+
 export function getVideogames() {
     return (dispatch) => {
         fetch(`http://localhost:3001/videogames`)
@@ -102,3 +103,5 @@ export function resetDetail() {
         });
     };
 }
+
+

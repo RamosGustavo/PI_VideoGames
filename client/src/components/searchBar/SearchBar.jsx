@@ -3,9 +3,10 @@ import { useDispatch } from "react-redux";
 import s from "./SearchBar.module.css";
 import { getNameVideogames } from "../../Actions/index.js";
 
-export default function Searchbar() {
+export default function Searchbar({ videogamesPerPage, setCurrentPage }) {
     const dispatch = useDispatch();
     const [name, setName] = useState("");
+
 
     const handleInputChange = (e) => {
         e.preventDefault();
@@ -16,7 +17,10 @@ export default function Searchbar() {
         e.preventDefault();
         dispatch(getNameVideogames(name));
         setName("");
+        setCurrentPage(1);
     };
+
+
 
     return (
         <div className={s.container}>

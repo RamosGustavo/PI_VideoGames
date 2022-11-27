@@ -20,6 +20,7 @@ export default function Home(){
 
     const [currentPage, setCurrentPage] = useState(1);
     const [videogamesPerPage] = useState(15);
+    
     const indexOfLastVideogame = currentPage * videogamesPerPage; //15
     const indexOfFirstVideogame = indexOfLastVideogame - videogamesPerPage; // 0
     const currentVideogames = allVideogames.slice(indexOfFirstVideogame, indexOfLastVideogame)
@@ -36,8 +37,8 @@ export default function Home(){
     }, [dispatch])
 
     useEffect(() => {
-
-    })
+        setCurrentPage(1)
+    },[])
 
     //Función que vuelve a pedír todos los videojuegos en caso de querer "resetear" la página
     const handleClick = (e) => {
@@ -71,7 +72,7 @@ export default function Home(){
     return(
         <div className={s.background}>
             <div>
-            <NavBar />
+            <NavBar setCurrentPage={setCurrentPage} />
             </div >
             <div className={s.ordenamientosYFiltros}>
                 {/* Ordenamientos */}
@@ -126,7 +127,7 @@ export default function Home(){
                 }
             </div>
                 <div>
-                <Paginado videogamesPerPage={videogamesPerPage} allVideogames={allVideogames.length} paginado={paginado}/>
+                <Paginado videogamesPerPage={videogamesPerPage} allVideogames={allVideogames.length} paginado={paginado} />
                 </div>
         </div>
     )

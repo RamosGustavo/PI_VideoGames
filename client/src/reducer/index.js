@@ -3,6 +3,7 @@ const initialState = {
     videogames: [],
     genres: [],
     detail: {},
+    page : 1,
 };
 
 export default function rootReducer(state = initialState, action) {
@@ -107,7 +108,6 @@ export default function rootReducer(state = initialState, action) {
                 ...state,
                 detail: action.payload,
             };
-
         case "RESET_DETAIL":
             return {
                 ...state,
@@ -117,3 +117,5 @@ export default function rootReducer(state = initialState, action) {
             return { ...state };
     }
 }
+
+

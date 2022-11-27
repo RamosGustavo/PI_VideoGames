@@ -8,9 +8,9 @@
 
 .paginadoItem{
     border: 2px solid rgb(71, 206, 251);
-    padding: 5px;
+    padding: 8px;
     background-color: #000000;
-    border-radius: 5px;
+    border-radius: 7px;
     color: rgb(255, 255, 255);
 }
 

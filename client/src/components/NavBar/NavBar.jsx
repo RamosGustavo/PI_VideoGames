@@ -3,7 +3,7 @@ import s from "./NavBar.module.css";
 import { Link } from "react-router-dom";
 import SearchBar from "../searchBar/SearchBar.jsx";
 
-export default function NavBar() {
+export default function NavBar({ setCurrentPage }) {
     return (
         <Fragment>
             <div className={s.nav}>
@@ -17,7 +17,7 @@ export default function NavBar() {
                         </div>
                     </div>
                     <div>
-                        <SearchBar />
+                        <SearchBar setCurrentPage={setCurrentPage} />
                     </div>
                 </div>
             </div>
